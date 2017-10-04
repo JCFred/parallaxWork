@@ -1,0 +1,175 @@
+@font-face {
+  font-family: vtksgiz;
+  src: url(fonts/vtksgiz.ttf) format('truetype');
+}
+
+body {
+  background-color: #6c6f93;
+  height:8000px;
+}
+
+header {
+  height:1000px;
+  width:100%;
+  display: inline-block;
+}
+#logoNav {
+  background-color: #6c6f93;
+  width: 100vw;
+  height:50px;
+  z-index:8;
+  display: flex;
+  justify-content: space-between;
+  position:fixed;
+}
+#logo {
+  width:125px;
+  height:100%;
+  display:flex;
+  align-items: center;
+}
+#navBar {
+  margin-right: 50px;
+  width:400px;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: vtksgiz;
+  font-size: 1.9em;
+  color: rgb(83, 84, 115);
+}
+.navBtn {
+}
+.navBtn:hover {
+  color:white !important;
+}
+
+#denver1, #denver2, #denver3, #denver4, #denver5 {
+  width:1450px;
+
+  height:1000px;
+  top:0;
+  left: 50%;
+  transform: translateX(-50%);
+  position:fixed;
+  z-index: 5;
+  background: url(images/denver1.png) 5% no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  display: inline-block;
+}
+#denver2 {
+  z-index: 4;
+  background: url(images/denver2.png) center 5% no-repeat;
+  background-size: 100%;
+}
+#denver3 {
+  z-index: 3;
+  background: url(images/denver3.png) center 5% no-repeat;
+  background-size: 100%;
+}
+#denver4 {
+  z-index: 2;
+  background: url(images/denver4.png) center 5% no-repeat;
+  background-size: 100%;
+}
+#denver5 {
+  z-index: 1;
+  background: url(images/denver5.png) center 5% no-repeat;
+  background-size: 100%;
+}
+
+#mainContent {
+  margin-top: 200px;
+  height:3000px;
+  width:100%;
+  position: fixed;
+  background-color: #6c6f93;
+  z-index: 6;
+  left:0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centerContent {
+  width: 65vw;
+  text-align: center;
+}
+.centerContent p {
+  font-size: 1.3em;
+}
+#workFlex {
+  width:80vw;
+  display:flex;
+  flex-wrap: wrap;
+}
+.exampleDiv {
+  width:24vw;
+  height:24vw;
+  background-color: white;
+  margin:1.3vw;
+}
+
+#apsenBG {
+  width: 1920px;
+  height: 600px;
+  background: url(images/aspen_colorado.jpg) center 5% no-repeat;
+  background-size: 100%;
+  z-index: 10;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.basicBox {
+  width: 130px;
+  height: 65px;
+  margin: 15px auto;
+  color: #535473;
+  font-family: vtksgiz;
+  font-size: 1.9rem;
+  line-height: 65px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.basicBox:hover {
+  stroke: #535473;
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+svg rect {
+  fill: none;
+  stroke: #535473;
+  stroke-width: 4;
+  stroke-dasharray: 400, 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+.basicBox:hover svg rect {
+  stroke-width: 6;
+  stroke-dasharray: 35, 245;
+  stroke-dashoffset: 38;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+}
+
+.border1 {
+  border:1px solid black;
+}
