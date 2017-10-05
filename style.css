@@ -6,21 +6,28 @@
 body {
   background-color: #6c6f93;
   height:8000px;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  margin:0px;
 }
 
 header {
-  height:1000px;
-  width:100%;
+  height:800px;
+  width:100vw;
   display: inline-block;
+  position:fixed;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #logoNav {
-  background-color: #6c6f93;
+  /*background-color: #6c6f93;*/
   width: 100vw;
   height:50px;
   z-index:8;
   display: flex;
   justify-content: space-between;
-  position:fixed;
 }
 #logo {
   width:125px;
@@ -39,15 +46,12 @@ header {
   font-size: 1.9em;
   color: rgb(83, 84, 115);
 }
-.navBtn {
-}
 .navBtn:hover {
   color:white !important;
 }
 
 #denver1, #denver2, #denver3, #denver4, #denver5 {
   width:1450px;
-
   height:1000px;
   top:0;
   left: 50%;
@@ -79,15 +83,64 @@ header {
   background: url(images/denver5.png) center 5% no-repeat;
   background-size: 100%;
 }
+#welcome {
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height:325px;
+  width:100vw;
+  background-color: #6c6f93;
+}
+#picContainer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:94%;
+  width:100%;
+}
+.sqrPic {
+  height:100%;
+  width:33%;
+}
+#devPic1{
+  background: url(images/webDev3.jpeg) 5% center no-repeat;
+  background-size: 100%;
+}
+#devPic2{
+  background: url(images/webDev6.jpeg) 5% center no-repeat;
+  background-size: 100%;
+}
+#devPic3{
+  background: url(images/webDev5.jpeg) 5% center no-repeat;
+  background-size: 100%;
+}
+
+.iconDiv {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  height:250px;
+  width:100vw;
+  left:0;
+}
+
+.icon {
+  width:150px;
+  height:150px;
+  border-radius: 150px;
+}
 
 #mainContent {
-  margin-top: 200px;
+  margin-top: 775px;
   height:3000px;
   width:100%;
-  position: fixed;
-  background-color: #6c6f93;
+  /*background-color: #6c6f93;*/
+  background: url(images/tree_bark.png) 5% repeat;
   z-index: 6;
   left:0;
+  /*top:775;*/
+  position: fixed;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -104,17 +157,20 @@ header {
   width:80vw;
   display:flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .exampleDiv {
-  width:24vw;
-  height:24vw;
+  width:23vw;
+  height:23vw;
   background-color: white;
   margin:1.3vw;
+  box-shadow: 5px 5px 5px #717070;
 }
 
 #apsenBG {
   width: 1920px;
-  height: 600px;
+  /*height: 600px;*/
+  height:80vw;
   background: url(images/aspen_colorado.jpg) center 5% no-repeat;
   background-size: 100%;
   z-index: 10;
@@ -124,10 +180,13 @@ header {
   background-size: cover;
 
   display:flex;
-  justify-content: center;
+  flex-direction: column;
+  /*justify-content: center;*/
   align-items: center;
 }
-
+#apsenBG h1 {
+  margin: 12px;
+}
 
 .basicBox {
   width: 130px;

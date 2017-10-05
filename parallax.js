@@ -11,7 +11,7 @@ var denver2 = document.getElementById('denver2')
 var denver3 = document.getElementById('denver3')
 var denver4 = document.getElementById('denver4')
 var denver5 = document.getElementById('denver5')
-var logoNav = document.getElementById('logoNav')
+var header = document.getElementById('parallaxDiv')
 var mainDiv = document.getElementById('mainContent')
 
 
@@ -29,8 +29,9 @@ function parallaxDenver () {
 
   denver5.style.top = -scrollTop * .02 + 'px'
 
-  logoNav.style.top = -scrollTop * .02 + 'px'
-  mainDiv.style.top = 550 - (scrollTop * .2) + 'px'
+  header.style.top = -scrollTop * .08 + 'px'
+  mainDiv.style.top = 150 - (scrollTop * .2) + 'px'
+
 }
 
  // on page scroll
